@@ -1,0 +1,34 @@
+{
+  "name": "Aleksey Pecheritsa",
+  "avatar": "https://sun27-1.userapi.com/impg/HJ47vTXZwEkPbFABbmtLzaxff1blTamcMooPhg/RAaPUkpHchw.jpg?size=720x1080&quality=95&sign=388bdb749136f21659e1289b6d43bb01&type=album",
+  "links": [
+    {
+      "title": "Поддержать канал",
+      "href": "https://pay.cloudtips.ru/p/3cb12734",
+      "image": "https://play-lh.googleusercontent.com/9aGXadhxiUl807a7sB9pCVQe5PVtkWAwXJJBGHGp-vCFUOo_2kraxIIK_JiVTW4NMHU"
+    },
+    {
+      "title": "Telegram канал",
+      "href": "https://t.me/pecheritsa_dev"
+    },
+    {
+      "title": "Курс Fullstack JavaScript разработчик",
+      "href": "https://pecheritsa.com"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Telegram",
+      "href": "https://t.me/pecheritsa_alex"
+    },
+    {
+      "title": "YouTube",
+      "href": "https://youtube.com/@pecheritsa_alex"
+    },
+
+    {
+      "title": "GitHub",
+      "href": "https://github.com/PecheritsaAleksey"
+    }
+  ]
+}
