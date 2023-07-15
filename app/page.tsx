@@ -1,5 +1,4 @@
 import Image from "next/image";
-import data from "../data.json";
 import {
   GithubIcon,
   InstagramIcon,
@@ -10,6 +9,12 @@ import {
   VkIcon,
   YouTubeIcon,
 } from "./components/Icons";
+
+import { get } from "@vercel/edge-config";
+import { redirect } from 'next/navigation';
+
+export const dynamic = 'force-dynamic',
+  runtime = 'edge';
 
 function LinkCard({
   href,
@@ -45,7 +50,27 @@ function LinkCard({
   );
 }
 
-export default function Home() {
+interface Link {
+  name: string;
+  avatar: string;
+  socials: {
+    title: string;
+    href: string;
+  }[];
+  links: {
+    href: string;
+    title: string;
+    image?: string;
+  }[];
+}
+
+export default async function Home() {
+  const data: Link | undefined = await get("get-touch");
+
+  if (!data) {
+    redirect("https://t.me/pecheritsa_dev");
+  }
+
   return (
     <div className="flex items-center flex-col justify-center mx-auto w-full mt-16 px-8">
       <Image
